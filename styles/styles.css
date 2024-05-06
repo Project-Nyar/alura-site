@@ -1,0 +1,423 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/*ESTILO CABEÇALHO*/
+
+header {
+    padding: 40px 4%;
+}
+
+/*todas as modificações acontecerão apenas na classe interface que está dentro do header.*/
+header>.interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .interface .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .interface .logo p{
+    padding: 0 10px;
+}
+
+header a{
+    text-decoration: none;  
+    color: #000;
+    
+}
+header a span{
+    font-weight: 700;
+}
+
+/*header .interface .menu ul li a{
+    text-decoration: none;
+}*/
+
+header .interface .menu ul{
+    list-style-type: none;
+}
+
+header .interface .menu ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header #contato{
+    visibility: hidden;
+}
+
+/*FIM ESTILO CABEÇALHO*/
+
+/*ESTILO TOPO DO SITE*/
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+section.topo-do-site .img-topo-do-site img{
+    border-radius: 50%;
+}
+section.topo-do-site .txt-topo-do-site h1{
+    font-size: 50px;
+    line-height: 60px;
+    /*text-align: center;*/
+    
+}
+
+section.topo-do-site .txt-topo-do-site p{
+    font-size: 19px;
+    margin: 20px 0;
+}
+section.topo-do-site .btn-social a{
+    color: black;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+/*FIM ESTILO TOPO DO SITE*/
+
+/*ESTILO SOBRE MIM*/
+
+section.sobre-mim{
+    background-color: #2a7be41c;
+    padding: 80px 4%;
+}
+
+section.sobre-mim .flex{
+    align-items: center;
+}
+
+section.sobre-mim .txt-sobre h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+section.sobre-mim .txt-sobre p{
+    margin: 40px 0;
+    text-align: justify;
+    max-width: 700px;
+}
+
+
+
+/*FIM ESTILO SOBRE MIM*/
+
+/*ESTILO SKILLSE HOBBIES*/
+
+section.skills-hobbies{
+    padding: 40px 4%;
+}
+
+section.skills-hobbies .flex{
+    gap: 18px;
+    justify-content: center;
+}
+
+section.skills-hobbies h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+section.skills-hobbies .skill-box{
+    display: flex;    
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background-color: #fff;
+    width: 176px;
+    height: 174px;
+    padding-left:16px;
+    padding-bottom: 16px;
+}
+/*ESTILO SKILLS E HOBBIES FIM*/
+
+/*ESTILO ACADÊMICO*/
+section.academico{
+    padding: 80px 4%;
+    background-color: #2a7be41c;
+}
+
+section.academico .flex{
+    gap:18px;
+    justify-content: center;   
+}
+
+section.academico .academico-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.academico .academico-box .box{
+    display: flex;
+    background-color: #fff;
+    width: 368px;
+    height: 347px;
+   justify-content: center;
+   align-items: center;
+}
+
+section.academico .academico-box h3, p{
+    align-self: flex-start;
+}
+
+section.academico h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+/*ESTILO ACADÊMICO FIM*/
+
+/*ESTILO PROFISSIONAL*/
+
+section.profissional{
+    padding: 40px 4%;
+}
+
+section.profissional .flex{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+section.profissional #secreto{
+    height: 406px;
+}
+
+section.profissional .flex img{
+    width: 752px;
+    height: 427px;
+    margin: 50px 0;
+}
+
+section.profissional h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+section.profissional .infos h3{
+    font-size: 25px;
+    max-width: 370px;
+}
+
+section.profissional .infos .btn{
+    display: flex;
+    gap: 18px;
+}
+
+section.profissional .infos .btn .btn-repositorio{
+    border: 1px solid #2a7ae4;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2a7ae4;
+}
+
+section.profissional .infos .btn .btn-ver-demo{
+    border:none;
+    background-color: #2a7ae4;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/*ESTILO PROFISSIONAL FIM*/
+
+/*ESTILO FORMULARIO*/
+
+section.formulario{
+    padding: 80px 4%;
+    background-color: #2a7be41c;
+}
+
+.formulario .contato h2{
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+section.formulario .contato p{
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+section.formulario .contato #texto2{
+    padding-bottom: 15px;
+}
+
+section.formulario .contato{
+    max-width: 656px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+section.formulario .contato .form-conteudo input, textarea{
+    border: none;
+    outline: none;
+   padding: 20px 12px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+section.formulario .contato .form-conteudo textarea{
+    resize: none;
+    height: 200px;
+}
+
+section.formulario .contato .btn-enviar input{
+    border: none;
+    outline: none;
+    padding: 16px;
+    background-color: #2a7ae4;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formulario .contato .form-conteudo a{
+    position:relative;
+    bottom:18px;
+    font-size: 14px;
+    
+    visibility: hidden;
+}
+
+.formulario .contato .form-conteudo.error a{
+
+    color: #ff3b25;
+    visibility: visible;
+  }
+
+/*ESTILO FORMULARIO FIM*/
+
+/*ESTILO RODAPÉ*/
+
+footer {
+    padding: 60px 4%;
+}
+
+footer .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+footer .interface .txt-rodape p{
+    text-align: center;
+}
+/*ESTILO RODAPÉ FIM */
+
+@media screen and (max-width: 426px){
+    /*CLASSE GERAL*/
+    
+    .flex{
+        flex-direction: column;
+    }
+
+    
+    /*CABEÇALHO*/
+
+    header .interface .menu{
+        display: none;
+    }
+
+    header #contato{
+        visibility: visible;
+    }
+
+    /*TOPO DO SITE*/
+    section.topo-do-site .flex{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site .img-topo-do-site img{
+       width: 35%;
+    }
+
+    section.topo-do-site .txt-topo-do-site h1{
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    section.topo-do-site .txt-topo-do-site p{
+        font-size: 16px;
+    }
+
+    section.topo-do-site .btn-social{
+        display: flex;
+       align-items: center;
+       justify-content: center;
+
+    }
+ 
+    /*SKILLS E HOBBIES*/
+    section.skills-hobbies{
+        padding: 40px 8%;
+    }
+
+    section.skills-hobbies .flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section.skills-hobbies .skill-box{
+        width: 158px;
+        height: 118px;
+    }
+
+    /*EXPERIENCIA PROFISSIONAL*/
+
+    section.profissional{
+        padding: 80px 8%;
+    }
+
+    section.profissional img{
+        width: 50vw;
+        height: 251px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+
+
+}
