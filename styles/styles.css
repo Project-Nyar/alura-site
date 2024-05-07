@@ -421,3 +421,16 @@ footer .interface .txt-rodape p{
 
 
 }
+
+@media screen and (max-width: 376px){
+     /*SKILLS E HOBBIES*/
+    section.skills-hobbies .skill-box{
+        width: 30%;
+        height: 118px;
+    }
+
+    section.academico .academico-box h3, p{
+        font-size: 14px;
+    }
+
+}
